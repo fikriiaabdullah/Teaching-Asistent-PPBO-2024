@@ -5,7 +5,7 @@ Ketentuan Soal:
 
 1.  Struktur Data Collection
     - Pilih salah satu atau lebih struktur data dari Collection Framework (misal: List, Set, Queue, atau Map) untuk menyimpan agenda.
-    - Struktur data ini harus mendukung operasi untuk menambahkan, menghapus, dan mencari agenda berdasarkan waktu pelaksanaannya.
+    - Struktur data ini harus mendukung operasi untuk menambahkan dan menghapus agenda berdasarkan waktu pelaksanaannya.
     - Berikan alasan dalam komentar mengapa Anda memilih struktur data tersebut.
 
 2.  Operasi yang Diperlukan
