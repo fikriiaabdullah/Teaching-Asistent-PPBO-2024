@@ -1,16 +1,50 @@
-# Tugas
-Berdasarkan materi yang telah kita pelajari, buatlah sebuah program Java yang memanfaatkan konsep **inheritance**. Program tersebut harus mencakup setidaknya satu **superclass** dan satu **subclass**.
+# Tugas Java: Inheritance dan Enkapsulasi
 
-Batasan:
-1. Superclass harus memiliki setidaknya dua **properties** dan dua **methods**.
-2. Subclass harus mewarisi **properties** dan **methods** dari superclass dan menambahkan setidaknya satu **properties** dan satu **methods** unik sendiri.
-3. Program harus mencakup konsep **encapsulation**, yaitu menggunakan metode getter dan setter untuk mengakses dan memodifikasi atribut (sudah dijelaskan pula pada materi **access modifiers** tadi).
-4. Program harus menciptakan setidaknya tiga **objek** dari **subclass** dan memanipulasi **properties** mereka melalui **methods** yang telah didefinisikan.
-5. Output program harus mencakup isi data pada **objek-objek** yang dibuat.
+Buatlah sebuah program Java dengan tema bebas yang mengimplementasikan konsep **inheritance** dan **enkapsulasi**. Program ini harus memiliki setidaknya satu kelas *superclass* dan satu kelas *subclass*, dengan persyaratan sebagai berikut:
+
+## Superclass
+
+- Memiliki minimal **4 atribut**, dua di antaranya harus memiliki tingkat akses `private`.
+- Dua atribut yang memiliki tingkat akses `private` harus diakses melalui metode **getter** dan **setter** (implementasi enkapsulasi).
+- Memiliki setidaknya **dua metode**, termasuk satu metode yang menampilkan informasi umum tentang objek dari *superclass*.
+
+## Subclass
+
+- Mewarisi properti dan metode dari *superclass*.
+- Menambahkan minimal **dua atribut** dan **satu metode unik**.
+- Menyertakan implementasi metode untuk menampilkan informasi lengkap tentang objek dari *subclass* (termasuk informasi dari *superclass*).
+
+## Penggunaan dalam Main Class
+
+- Buatlah **kelas utama** untuk menjalankan program.
+- Di dalam kelas utama, buatlah minimal **tiga objek** dari *subclass*.
+- Set dan ubah nilai atribut-atribut objek tersebut menggunakan metode **getter** dan **setter**.
+- Tampilkan informasi lengkap dari setiap objek menggunakan metode yang ada.
+
+## Batasan Tambahan
+
+- Pastikan setiap atribut `private` hanya dapat diakses melalui metode **getter** dan **setter** untuk menjaga enkapsulasi.
+- Gunakan **komentar pada kode** untuk menjelaskan konsep *inheritance* dan *encapsulation* yang Anda terapkan.
+
+## Contoh Tema: Kendaraan
+
+### Superclass `Kendaraan`
+- Berisi atribut seperti `merk`, `tahunPembuatan`, `kecepatanMaks`, dan `harga`.
+- Atribut `kecepatanMaks` dan `harga` harus bersifat `private` dan diakses melalui **getter** dan **setter**.
+
+### Subclass `Mobil`
+- Mewarisi atribut dan metode dari `Kendaraan`.
+- Menambahkan atribut khusus seperti `jenisBahanBakar` dan `jumlahKursi`.
+- Memiliki metode unik `tampilkanDetailMobil()`.
+
+## Output yang Diharapkan
+
+Program menampilkan informasi lengkap setiap objek yang telah dibuat dari *subclass*, misalnya:
+
 
 Ingatlah untuk berkreasi! Anda bebas memilih tema program Anda, selama memenuhi semua batasan di atas. Misalnya, Anda bisa membuat program tentang hewan di kebun binatang, buku di perpustakaan, atau apapun yang Anda suka. Selamat mencoba!
 
-Format penulisan nama file adalah **PPBO_09_NIM**, dengan isi file sebagai berikut:
+Format penulisan nama file adalah **PPBO_08_09_NIM**, dengan isi file sebagai berikut:
 
 ```java
 // Nama : ...
@@ -18,7 +52,7 @@ Format penulisan nama file adalah **PPBO_09_NIM**, dengan isi file sebagai berik
 
 // import ...
 
-public class PPBO_09_NIM {
+public class PPBO_08_09_NIM {
     public static void main(String[] args) {
         // ...
     }
